@@ -258,4 +258,8 @@ main section a{
   p{
     font-size: 1.5rem;
   }
+
+  .description{
+    width: 85%;
+  }
 }
