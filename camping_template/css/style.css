@@ -174,7 +174,7 @@ nav a{
 }
 
 nav span, nav ul{
-  width: auto;
+  width: 20%;
 }
 
 nav span{
@@ -248,5 +248,7 @@ main section a{
   html {
     font-size: .5rem;
   }
-
+  nav ul{
+    font-size: 1rem;
+  }
 }
