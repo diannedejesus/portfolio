@@ -173,15 +173,12 @@ nav a{
   text-transform: uppercase;
 }
 
-nav span, nav ul{
-  width: 20%;
-}
-
 nav span{
   display: inline-block;
   text-align: right;
   float: right;
 }
+
 nav ul{
   float: left;
   text-align: left;
@@ -200,6 +197,11 @@ nav .button{
 nav li{
 	display: inline-block;
   padding-right: 1em;
+}
+
+nav div{
+  position: absolute;
+  width: 100%;
 }
 
 /******************************************
