@@ -25,6 +25,7 @@
 html{
   height: 100%;
   font-size: 85%;
+  
 }
 
 body{
@@ -134,6 +135,7 @@ footer ul li{
 
 footer > section{
 	clear: both;
+  overflow: auto;
 }
 
 footer .links{
@@ -165,7 +167,8 @@ footer .contacts{
 /* NAVIGATION
 /********************/
 nav{
-  padding: 1em;
+  padding: 2em;
+  overflow: auto;
 }
 
 nav a{
@@ -191,7 +194,7 @@ nav .button{
   background: #949494;
   color: grey;
   border-radius: 5px;
-  padding: 10px;
+  padding: .8em;
   color: rgba(86,57,43);
 }
 
@@ -228,6 +231,7 @@ main section a{
 
 .visits{
   background: rgba(86,57,43);
+  overflow: auto;
 }
 
 .visits section {
