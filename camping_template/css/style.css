@@ -36,7 +36,7 @@ body{
   height: 100%;
   background-color: rgba(133,167,10);
   color: white;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 h1{
@@ -104,9 +104,11 @@ footer {
 footer .links, footer .contacts{
   width: auto;
 }
+
 footer i{
   font-size: 2rem;
 }
+
 footer ul, footer p{
   padding: 0;
   margin: 0;
@@ -164,12 +166,13 @@ footer .contacts{
   float: right;
   color: rgba(250,126,2);
 }
+
 /*********************/
 /* NAVIGATION
 /********************/
 nav{
   padding: 2em;
-  overflow: auto;
+  overflow: hidden;
 }
 
 nav a{
@@ -240,8 +243,11 @@ main section a{
   width: 50%;
 }
 
+.visits section div, .visits p{
+  margin: 0 auto;
+}
+
 .visits section div{
-	margin: 0 auto;
 	height: 8em;
 	width: 70%;
 	background-color: rgba(133,167,10);
@@ -249,8 +255,11 @@ main section a{
 
 .visits p{
   width: 80%;
-  margin: 0 auto;
 }
+
+/*-------------------------------------------------------*/
+/*---- Small  portrait
+/*-------------------------------------------------------*/
 
 @media (max-width: 600px) {
   html {
@@ -269,11 +278,20 @@ main section a{
   }
 }
 
+/*-------------------------------------------------------*/
+/*---- Small  Landscape 
+/*-------------------------------------------------------*/
+
 @media (max-width: 700px) {
   .description{
     width: 85%;
   }
 }
+
+/*-------------------------------------------------------*/
+/*---- Large   
+/*-------------------------------------------------------*/
+
 
 @media (min-width: 1400px) {
   header, main, footer{
