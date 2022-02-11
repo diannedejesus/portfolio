@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  	<meta charset="utf-8">
+  	<meta name="description" content="Your description goes here">
+  	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Starbucks</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	</head>
+	<body>
+		
+		<header>
+			<nav>
+				<div>
+					<img class="logo" src="images/logo.png">
+					<ul class="shrunk">
+						<li><a>Menu</a></li>
+						<li><a>Rewards</a></li>
+						<li><a>Gift Cards</a></li>
+					</ul>
+				</div>
+				<div>
+					<ul class="shrunk">
+						<li><a><i class="fas fa-map-marker-alt"></i> Find a Store</a></li>
+						<li><a>Sign in</a></li>
+						<li><a>Join now</a></li>
+					</ul>
+					<i onclick="openMenu()" class="fas fa-bars menu-arrow"></i>
+				</div>
+			</nav>
+		</header>
+		<section class="mobileMenu">
+			<ul>
+				<li><a><i class="fas fa-map-marker-alt"></i> Find a Store</a></li>
+				<li><a>Sign in</a></li>
+				<li><a>Join now</a></li>
+			</ul>
+			<ul>
+				<li><a>Menu</a></li>
+				<li><a>Rewards</a></li>
+				<li><a>Gift Cards</a></li>
+			</ul>
+		</section>
+		<main>
+			<section class="principal-section">
+				<h1>Starbucks &reg; Happy Hour</h1>
+				<p>We'll meet you in your inbox. Drink deals are on their way.</p>
+				<img src="images/carameldrink.jpeg">
+				<img src="images/chocodrink.jpeg">
+				<img src="images/greendrink.jpeg">
+			</section>
+			<section class="three-box">
+				<div class="textdiv halfheight">
+					<h2>Four Drinks, A Million Reasons</h2>
+					<cite>"Just love yourself and you're set." - Lady Gaga</cite>
+					<p>Lady Gaga and Starbucks share a mission: to build a kinder, braver world. Through the Born This Way Foudation, Lady Gaga has inspired her fans to embrace kindness in their communities--online and in the world. With your help, we can empower young people to spread more kindness.<button>learn more</button></p>
+				</div>
+				<div class="gagadrinks halfheight"></div>
+				<div class="pink-drink fullheight"></div>
+			</section>
+			<section class="three-box">
+				<div class="drink-leafbg fullheight"></div>
+				<div class="textdiv">
+					<h2>Introducing Vanilla Sweet Cream Cold Brew--Sweet, Creamy, Cold, Bold.</h2>
+					<p>Just before serving, our slow-steeped custom blend Starbucks &reg; Cold Brew Coffee is topped with a delicate float of house-made vanilla sweet cream that cascades throughout the cup.<button>learn more</button></p>
+				</div>
+				<div class="promo-cup halfheight"></div>
+			</section>
+			<section class="half">
+				<div class="SB-logobg fullheight textdiv">
+					<h2>The New Ultra Caramel Frappuccino Is Here!</h2>
+					<p>Congrats on doing that thing! This calls for caramel. Lots of it With cold brew whipped cream. The new Ultra Caramel Frappuccino is here!<button>learn more</button></p>
+				</div>
+				<div class="caramel-drink fullheight"></div>
+			</section>
+			<section class="small">
+				<div class="textdiv fullheight kindness-text">
+					<h2>Kindness Starts With A Cup</h2>
+					<p>Introducing the Cups of Kindness collection: four very special drinks as delicious and refreshing as they are beautiful. Two new creations, Matcha Lemonade and Violet Drink, will join Pink Drink and Ombré Pink Drink as instant summer favorites.<button>learn more</button></p>
+				</div>
+				<div class="kindness-promo fullheight"></div>
+			</section>
+		</main>
+		<footer>
+			<section class="footer-links">
+				<section>
+					<div>
+						<h3>About Us</h3>
+						<ul class="menu">
+							<li><a>Our Company</a></li>
+							<li><a>Our Coffee</a></li>
+							<li><a>Stories and News</a></li>
+							<li><a>Starbucks Archive</a></li>
+							<li><a>Investor Relations</a></li>
+							<li><a>Customer Service</a></li>
+						</ul>
+					</div>
+					<div class="menu-arrow"><i class="fas fa-chevron-up rotate" onclick="myFunction(this)"></i></div>
+				</section>
+				<section>
+					<div>
+						<h3>Careers</h3>
+						<ul class="menu">
+							<li><a>Culture and Values</a></li>
+							<li><a>Inclusion, Diversity, and<br> Equity</a></li>
+							<li><a>College Achievement<br> Plan</a></li>
+							<li><a>Alumni Community</a></li>
+							<li><a>U.S. Careers</a></li>
+							<li><a>International Careers</a></li>
+						</ul>
+					</div>
+					<div class="menu-arrow"><i class="fas fa-chevron-up rotate" onclick="myFunction(this)"></i></div>
+				</section>
+				<section>
+					<div>
+						<h3>Social Impact</h3>
+						<ul class="menu">
+							<li><a>People</a></li>
+							<li><a>Planet</a></li>
+							<li><a>Environmental and Social<br> Impact Reporting</a></li>
+						</ul>
+					</div>
+					<div class="menu-arrow"><i class="fas fa-chevron-up rotate" onclick="myFunction(this)"></i></div>
+				</section>
+				<section>
+					<div>
+						<h3>For Business Partners</h3>
+						<ul class="menu">
+							<li><a>Landlord Support Center</a></li>
+							<li><a>Suppliers</a></li>
+							<li><a>Corporate Gift Card Sales</a></li>
+							<li><a>Office and Foodservice<br> Coffee</a></li>
+						</ul>
+					</div>
+					<div class="menu-arrow"><i class="fas fa-chevron-up rotate" onclick="myFunction(this)"></i></div>
+				</section>
+				<section>
+					<div>
+						<h3>Order and Pickup</h3>
+						<ul class="menu">
+							<li><a>Order on the App</a></li>
+							<li><a>Order on the Web</a></li>
+							<li><a>Delivery</a></li>
+							<li><a>Order and Pickup Options</a></li>
+							<li><a>Explore and Find Coffee<br> for Home</a></li>
+						</ul>
+					</div>
+					<div class="menu-arrow"><i class="fas fa-chevron-up rotate" onclick="myFunction(this)"></i></div>
+				</section>
+			</section>
+			<section class="icons">
+				<ul>
+					<li><a><i class="fab fa-spotify fa-fw"></i></a></li>
+					<li><a><i class="fab fa-facebook-f fa-fw"></i></a></li>
+					<li><a><i class="fab fa-pinterest-p fa-fw"></i></a></li>
+					<li><a><i class="fab fa-instagram fa-fw"></i></a></li>
+					<li><a><i class="fab fa-youtube fa-fw"></i></a></li>
+					<li><a><i class="fab fa-twitter fa-fw"></i></a></li>
+				</ul>
+			</section>
+			<section class="terms">
+				<ul>
+					<li><a>Privacy Policy</a></li>
+					<li><a>Terms of Use</a></li>
+					<li><a>CA Supply Chain Act</a></li>
+					<li><a>Cookie Preferences</a></li>
+				</ul>
+			</section>
+			<p>&COPY; Starbucks Coffee Company. All rights reversed.</p>
+		</footer>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

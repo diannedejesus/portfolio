@@ -1,0 +1,407 @@
+/* Box Model Hack */
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* navigation */
+nav{
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     padding: 2em;
+     border-bottom: 1px solid lightgrey;
+}
+
+nav li{
+     list-style-type: none;
+     display: inline-block;
+     padding: .5rem;
+}
+
+nav div{
+     width: 50%;
+     display: flex;
+     align-items: center;
+}
+nav div + div{
+     justify-content: flex-end;
+}
+
+nav .logo{
+     height: 3.5rem;
+     float: left;
+}
+
+.mobileMenu{
+     position: fixed;
+     z-index: 0;
+     right: 0;
+     width: 0;
+     height: 100%;
+     background-color: white;
+     transition: width .5s ease;
+     
+}
+.mobileMenu li{
+     list-style-type: none;
+     padding: .5em;
+}
+
+/* main content */
+main, .three-box, .textdiv{
+     display: flex;
+     flex-direction: column;
+}
+
+main section{
+     height: 70em;
+     overflow: hidden;
+}
+
+main div, .kindness-promo{
+     width: 50%;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+}
+
+h1{
+     font-size: 5rem;
+     width: 40%;
+}
+
+h2{
+     font-size: 2rem;
+     line-height: 2.5rem;
+     font-weight: 800;
+     width: 80%;
+     border-top: .5em solid rgb(0, 100, 33);
+}
+
+.principal-section img{
+     width: 10rem;
+     margin: 1em;
+     border: 6px solid rgb(0, 100, 33);
+     border-radius: 10em;
+}
+
+.principal-section {
+     min-height: 40em;
+     background-image: url("../images/handdrink.jpeg");
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     padding-left: 10em;
+}
+
+.three-box{
+     flex-wrap: wrap;
+     justify-content: flex-start;
+}
+
+.textdiv{
+     justify-content: center;
+     height: 50%;
+     padding: 1em 10em 5em 10em;
+     line-height: 1.6rem;
+}
+
+.fullheight{
+     height: 100%;
+}
+.halfheight{
+     height: 50%;
+}
+
+
+.gagadrinks{
+     background-image: url('../images/gagadrinks.jpeg');
+}
+.pink-drink{
+     background-image: url('../images/pinkdrinkgirl.jpeg');
+}
+.drink-leafbg{
+     background-image: url('../images/leafdrink.jpeg');
+}
+.promo-cup{
+     background-image: url('../images/promocup.jpeg');
+}
+.caramel-drink{
+     background-image: url('../images/carmelgirl.jpeg');
+}
+.SB-logobg{
+     background-image: url('../images/bglogo.jpeg');
+     background-position: left;
+}
+
+.half, .small{
+     display: flex;
+     flex-direction: row;
+     height: 60em;
+}
+.small{
+     height: 45em;
+}
+
+.kindness-promo{
+     background-image: url("../images/drinks.jpeg");
+     float: right;
+     width: 60%;
+}
+.kindness-text{
+     width: 40%;
+}
+
+
+button{
+     display: block;
+     margin: 2em 0;
+     padding: .2em 2em;
+     border: 2px solid rgb(82, 82, 82);
+     border-radius: 3px;
+}
+
+/* footer */
+footer{
+     padding: 0 15em;
+     border-top: 1px solid lightgrey;
+}
+
+footer li{
+     margin-bottom: 1.5em;
+     list-style-type: none;
+}
+
+footer h3{
+     font-size: 1.2rem;
+     color: black;
+     margin-bottom: 2em;
+}
+
+footer p{
+     color: grey;
+}
+
+footer ul{
+     padding: 0;
+     color: grey;
+     font-size: .9rem;
+     line-height: 1.2rem;
+}
+
+.footer-links{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+}
+
+.icons li{
+     display: inline-block;
+     margin: 0 .3em;
+     padding: .4em .3em;
+     font-size: 1.3rem;
+     color: white;
+     border-radius: 10em;
+     background-color: black;
+}
+
+.terms li{
+     display: inline-block;
+     margin: 0 .3em;
+     padding: 0 .4em;
+     font-size: .9rem;
+     color: black;
+}
+.terms li+li{
+     border-left: 1px solid black;
+}
+
+.menu-arrow{
+     visibility: hidden;
+}
+
+
+
+@media screen and (max-width: 1300px) {
+     footer{
+          padding: 0 5em;
+     }
+
+     .textdiv{
+          padding: 1em 5em 5em 5em;
+     }
+
+     h2{
+          font-size: 1.5rem;
+          line-height: 2rem;
+     }
+
+     h1{
+          font-size: 4rem;
+          width: 50%;
+     }     
+}
+
+@media screen and (max-width: 900px) {
+     main div{
+          width: 100%;
+     }
+     h2{
+          font-size: 1.5rem;
+          line-height: 2rem;
+     }
+     h1{
+          font-size: 4rem;
+          width: 50%;
+     }
+
+     .fa-bars{
+          font-size: 2rem;
+     }
+
+     .principal-section {
+          height: 30em;
+     }
+     .principal-section h1{
+          font-size: 2.5rem;
+     }
+     .principal-section img{
+          width: 7em;
+          margin: .5em;
+     }
+
+     .textdiv{
+          padding: 1em 5em 5em 5em;
+     }
+
+     .three-box{
+          flex-wrap: nowrap;
+     }
+     
+
+
+     .kindness-text{
+          width: 100%;
+     }
+     .kindness-promo{
+          width: 100%;
+     }
+
+
+     footer{
+          padding: 0 5em;
+     }
+     footer h3{
+          display: inline-block;
+          margin: 0 0 1.5em 0;
+     }
+
+     .footer-links section{
+          display: flex;
+          justify-content: space-between;
+          margin-top: 1.5em;
+     }
+
+     .terms li{
+          display: block;
+          border: 0;
+          margin: 2em 0;
+     } 
+     .terms li+li{
+          border: 0;
+          padding-left: 0;
+     }
+
+     .footer-links, .small, .half{
+          flex-direction: column;
+     }
+
+     .footer-links li{
+          display: block;
+     }
+
+     footer p{
+          font-size: small;
+     }
+     
+
+     
+
+     /* Animation of Menus */
+     .rotate{
+          -moz-transition: -moz-transform .2s ease-out;
+          -webkit-transition: -webkit-transform .2s ease-out;
+          -ms-transition: -ms-transform .2s ease-out;
+          -o-transition: -o-transform .2s ease-out;
+          transition: transform .2s ease-out;;
+     }
+      
+     .rotate.down{
+          -webkit-transform: rotate(180deg);
+          -moz-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+          -o-transform: rotate(180deg);
+          transform: rotate(180deg);
+     }
+
+     .menu{
+          height: 0;
+          overflow: hidden;
+          transition: height .5s ease;
+          padding-left: 0;
+          margin: 0;
+     }
+        
+     .menu.open {
+          height: 100px;
+     }
+
+     .menu-arrow{
+          visibility: visible;
+     }
+
+     .shrunk{
+          visibility: hidden;
+     }
+     .openMobileMenu{
+          width: 75%;
+     }
+}
+
+@media screen and (max-width: 550px) {
+     .principal-section img{
+          display: block;
+     }
+     .icons li{
+          font-size: 1.3em;
+     }
+}
