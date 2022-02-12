@@ -29,8 +29,10 @@ function openMenu(event){
     if(mobileMenu){
         if(mobileMenu.className === 'mobileMenu'){
             mobileMenu.className = 'mobileMenu openMobileMenu'
+            document.querySelector('body').className = 'noScroll'
         }else{
             mobileMenu.className = 'mobileMenu'
+            document.querySelector('body').className = ''
         }
     }
 }
