@@ -313,15 +313,24 @@ hr{
           display:none;
      }
 
-     /* .exampleTeaser img{
-          float: none;
-     } */
-
      .exampleTeaser section{
           padding: 0;
      }
      .exampleTeaser, .alternate{
           text-align: center;
+     }
+
+     .alternate {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+     }
+
+     .alternate section{
+          order: 2;
+     }
+     .alternate img{
+          order: 1;
      }
 }
 
@@ -379,6 +388,10 @@ hr{
 
      .categoryGallery img{
           width: 75%;
+     }
+
+     .exampleTeaser section, .exampleTeaser{
+          width: 95%;
      }
 }
    
