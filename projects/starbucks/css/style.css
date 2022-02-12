@@ -252,8 +252,8 @@ footer ul{
 
 
 @media screen and (max-width: 1300px) {
-     footer{
-          padding: 0 5em;
+     .principal-section{
+          background-position: 75%;
      }
 
      .textdiv{
@@ -268,9 +268,12 @@ footer ul{
      h1{
           font-size: 4rem;
           width: 50%;
-     }     
-}
+     }
 
+     footer{
+          padding: 0 5em;
+     }
+}
 @media screen and (max-width: 900px) {
      main div{
           width: 100%;
@@ -401,7 +404,16 @@ footer ul{
      .principal-section img{
           display: block;
      }
+     .principal-section h1{
+          width: 100%;
+     }
+
+     .textdiv, .principal-section{
+          padding: 1em;
+     }
+     
      .icons li{
           font-size: 1.3em;
      }
+
 }
